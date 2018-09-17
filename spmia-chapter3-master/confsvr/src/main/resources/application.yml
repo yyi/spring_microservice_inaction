@@ -34,11 +34,17 @@ spring:
   profiles:
     active: native
   cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///G:/code/java/spring_microservice_inaction/spmia-chapter3-master/confsvr/src/main/resources/config/organizationservice,
+                               file:///G:/code/java/spring_microservice_inaction/spmia-chapter3-master/confsvr/src/main/resources/config/licensingservice
     inetutils:
      config:
        server:
            native:
-              searchLocations: file://F:/development/spring_microservice_inaction/spmia-chapter3-master/confsvr/src/main/resources/config/licensingservice,
-                               file://F:/development/spring_microservice_inaction/spmia-chapter3-master/confsvr/src/main/resources/config/organizationservice
+#              searchLocations: classpath:config/licensingservice,
+#                               file:///G:/code/java/spring_microservice_inaction/spmia-chapter3-master/confsvr/src/main/resources/config/organizationservice
+              searchLocations: classpath:config/licensingservice
      timeout-seconds: 10
 ###              searchLocations: classpath:config/,classpath:config/licensingservice
