@@ -37,8 +37,8 @@ spring:
     config:
       server:
         native:
-          search-locations: file:///G:/code/java/spring_microservice_inaction/spmia-chapter3-master/confsvr/src/main/resources/config/organizationservice,
-                               file:///G:/code/java/spring_microservice_inaction/spmia-chapter3-master/confsvr/src/main/resources/config/licensingservice
+          search-locations: file:///F:/development/spring_microservice_inaction/spmia-chapter3-master/confsvr/src/main/resources/config/organizationservice,
+                               file:////F:/development/spring_microservice_inaction/spmia-chapter3-master/confsvr/src/main/resources/config/licensingservice
     inetutils:
      config:
        server:
